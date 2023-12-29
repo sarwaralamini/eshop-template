@@ -16,19 +16,8 @@ TABLE CONTENT
 /*import vendors*/
 @import url(normalize.css);
 @import url(bootstrap.min.css);
-@import url(uicons-regular-straight.css);
-:root,
-[data-bs-theme=light] {
-  --primary-color: rgba(131, 183, 53, 1);
-  --link-color:#333333;
-  --link-color-hover:#242424;
-  --text-color:#777777;
-  --title-color: #242424;
-  --red--color: #D41212;
-  --yellow-color: #FBBC34;
-  --notices-warning-color: #E0B252;
-  --notices-success-color: #459647;
-}
+@import url(../plugins/fontawesome/css/all.min.css);
+
 /*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -115,11 +104,68 @@ input:focus::-moz-placeholder {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--text-dark);
+  text-decoration: none;
+}
+a, button, img, input, span, h4{
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
 }
 
 a:hover {
-  color: var(--link-color-hover);
+  color: var(--primary);
 }
 
+body{
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  background-color: var(--white);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
 /*HEADER*/
+.header{
+  background-color: var(--white);
+}
+.header-top{
+  font-size: 13px;
+  background-color: var(--black);
+}
+.header-top i{
+  color: var(--white);
+}
+
+.header-top a{
+  color: var(--white);
+}
+
+.telephone ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.telephone ul li {
+  color: var(--white);
+  font-size: 13px;
+  line-height: 40px;
+  display: inline-block;
+  position: relative;
+  list-style: outside none none;
+  padding-right: 18px;
+  margin-right: 18px;
+  padding-left: 0;
+}
+
+.telephone ul li:first-child:after {
+  background-color: #fff;
+  content: "";
+  height: 11px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 1px;
+}
+
+.telephone ul li i {
+  margin-right: 5px;
+}

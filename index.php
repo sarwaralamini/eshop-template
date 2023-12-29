@@ -13,6 +13,7 @@
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg" />
         <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/colors/green.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
